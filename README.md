@@ -44,3 +44,4 @@ The json files used for configuration will be installed under
 /usr/share/mctp-emulator/ folder in the BMC. To dynamically modify this config
 file in run time, please mount /usr as rw partition in overlay fs
 (by running rw.sh) and modify.
+
