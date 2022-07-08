@@ -1,6 +1,15 @@
 {
     "Endpoints": [
         {
+            "AdditionalInterfaces": [
+                {
+                    "xyz.openbmc_project.Inventory.Decorator.PCIDevice": {
+                        "Bus": 104,
+                        "Device": 3,
+                        "Function": 0
+                    }
+                }
+            ],
             "Eid": 8,
             "Mode": "busowner",
             "NetworkId": 10,
@@ -24,6 +33,15 @@
             }
         },
         {
+            "AdditionalInterfaces": [
+                {
+                    "xyz.openbmc_project.Inventory.Decorator.PCIDevice": {
+                        "Bus": 104,
+                        "Device": 3,
+                        "Function": 0
+                    }
+                }
+            ],
             "Eid": 9,
             "Mode": "endpoint",
             "NetworkId": 20,
