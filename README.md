@@ -31,6 +31,14 @@ types supported.
 raw request bytes and the corresponding responses from
 configurations/req_resp.json.
 
+Note: Edit the binding_config.json file, and change the binding type to the required one.
+for example, please update the bindtype to pcie to make the mctp-emulator look like a PCIe
+binding daemon.
+root@intel-obmc:/usr/share/mctp-emulator# cat binding_config.json
+{
+    "bindtype":"pcie"
+}
+
 #### Endpoint object
 Exposed under the path `/xyz/openbmc_project/mctp/device/<eid>` with the
 following interfaces.
