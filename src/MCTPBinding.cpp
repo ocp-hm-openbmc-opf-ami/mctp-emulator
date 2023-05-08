@@ -684,6 +684,10 @@ MctpBinding::MctpBinding(
         addEndpoints(hotSwappableDataFile, destId);
     });
 
+    mctpInterface->register_method("ChangeEID", [this](uint8_t destId) {
+        mctpInterface->set_property("Eid", destId);
+    });
+
     // Provide specific EID in json data file to remove from network
     mctpInterface->register_method("RemoveDevice", [this](uint8_t destId) {
         std::ifstream jsonFile(hotSwappableDataFile);
