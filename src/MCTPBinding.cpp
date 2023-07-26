@@ -784,6 +784,20 @@ MctpBinding::MctpBinding(
             }
         });
 
+    mctpInterface->register_method(
+        "RegisterResponder",
+        [](uint8_t /*msgTypeName*/, std::vector<uint8_t> /*inputVersion*/) -> bool {
+            return true;
+        });
+
+    mctpInterface->register_method(
+        "sendMessageReceivedSignal",
+        [](uint8_t msgType, uint8_t srcEid, uint8_t msgTag, bool tagOwner,
+           std::vector<uint8_t> response) -> void {
+            sendMessageReceivedSignal(msgType, srcEid, msgTag, tagOwner,
+                                      response);
+        });
+
     mctpInterface->register_signal<uint8_t, uint8_t, uint8_t, bool,
                                    std::vector<uint8_t>>(
         "MessageReceivedSignal");
