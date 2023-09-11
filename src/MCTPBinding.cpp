@@ -82,6 +82,8 @@ void MctpBinding::addEndpoints(std::string file, std::optional<uint8_t> destId)
     bool nvmeMgmtMsg;
     bool spdm;
     bool securedMsg;
+    bool cxlFmApi;
+    bool cxlCci;
     bool vdpci;
     bool vdiana;
     std::string vendorID = "0x8086";
@@ -125,6 +127,8 @@ void MctpBinding::addEndpoints(std::string file, std::optional<uint8_t> destId)
                 nvmeMgmtMsg = msgType["NVMeMgmtMsg"];
                 spdm = msgType["SPDM"];
                 securedMsg = msgType["SECUREDMSG"];
+                cxlFmApi = msgType["CXLFMAPI"];
+                cxlCci = msgType["CXLCCI"];
                 vdpci = msgType["VDPCI"];
                 vdiana = msgType["VDIANA"];
                 if (vdpci == true)
@@ -193,6 +197,8 @@ void MctpBinding::addEndpoints(std::string file, std::optional<uint8_t> destId)
             msgTypeIntf->register_property("NVMeMgmtMsg", nvmeMgmtMsg);
             msgTypeIntf->register_property("SPDM", spdm);
             msgTypeIntf->register_property("SECUREDMSG", securedMsg);
+            msgTypeIntf->register_property("CXLFMAPI", cxlFmApi);
+            msgTypeIntf->register_property("CXLCCI", cxlCci);
             msgTypeIntf->register_property("VDPCI", vdpci);
             msgTypeIntf->register_property("VDIANA", vdiana);
             msgTypeIntf->initialize();
@@ -292,6 +298,12 @@ static std::string getMessageType(uint8_t msgType)
             break;
         case MCTP_MESSAGE_TYPE_SECUREDMSG: // 0x06
             msgTypeValue = "SECUREDMSG";
+            break;
+        case MCTP_MESSAGE_TYPE_CXL_FM_API: // 0x07
+            msgTypeValue = "CXLFMAPI";
+            break;
+        case MCTP_MESSAGE_TYPE_CXL_CCI: // 0x08
+            msgTypeValue = "CXLCCI";
             break;
         case MCTP_MESSAGE_TYPE_VDPCI: // 0x7E
             msgTypeValue = "VDPCI";

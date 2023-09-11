@@ -20,6 +20,8 @@
                 "NVMeMgmtMsg": false,
                 "PLDM": true,
                 "SECUREDMSG": true,
+                "CXLFMAPI": false,
+                "CXLCCI": false,
                 "SPDM": true,
                 "VDIANA": false,
                 "VDPCI": true
@@ -52,6 +54,8 @@
                 "NVMeMgmtMsg": false,
                 "PLDM": true,
                 "SECUREDMSG": false,
+                "CXLFMAPI": false,
+                "CXLCCI": false,
                 "SPDM": true,
                 "VDIANA": false,
                 "VDPCI": true
@@ -75,6 +79,8 @@
                 "NVMeMgmtMsg": false,
                 "PLDM": true,
                 "SECUREDMSG": false,
+                "CXLFMAPI": false,
+                "CXLCCI": true,
                 "SPDM": false,
                 "VDIANA": false,
                 "VDPCI": true
@@ -107,6 +113,8 @@
                 "NVMeMgmtMsg": false,
                 "PLDM": true,
                 "SECUREDMSG": true,
+                "CXLFMAPI": false,
+                "CXLCCI": false,
                 "SPDM": true,
                 "VDIANA": false,
                 "VDPCI": true
@@ -139,6 +147,8 @@
                 "NVMeMgmtMsg": false,
                 "PLDM": true,
                 "SECUREDMSG": true,
+                "CXLFMAPI": false,
+                "CXLCCI": false,
                 "SPDM": true,
                 "VDIANA": false,
                 "VDPCI": true
