@@ -94,35 +94,26 @@
             }
         },
         {
-            "AdditionalInterfaces": [
-                {
-                    "xyz.openbmc_project.Inventory.Decorator.PCIDevice": {
-                        "Bus": 106,
-                        "Device": 3,
-                        "Function": 0
-                    }
-                }
-            ],
-            "Eid": 29,
+            "Eid": 11,
             "Mode": "endpoint",
-            "NetworkId": 10,
+            "NetworkId": 60,
             "SupportedMessageTypes": {
                 "Ethernet": false,
                 "MctpControl": true,
                 "NCSI": false,
                 "NVMeMgmtMsg": false,
                 "PLDM": true,
-                "SECUREDMSG": true,
+                "SECUREDMSG": false,
                 "CXLFMAPI": false,
-                "CXLCCI": false,
-                "SPDM": true,
+                "CXLCCI": true,
+                "SPDM": false,
                 "VDIANA": false,
                 "VDPCI": true
             },
-            "Uuid": "cba227b7-3144-4573-a824-5cd4557e54e1",
+            "Uuid": "34445ed8-de96-47e9-8e62-dad27c317f07",
             "VDPCIMT": {
                 "CapabilitySets": [
-                    5,
+                    2,
                     9
                 ]
             }
@@ -137,7 +128,7 @@
                     }
                 }
             ],
-            "Eid": 39,
+            "Eid": 12,
             "Mode": "endpoint",
             "NetworkId": 20,
             "SupportedMessageTypes": {
@@ -171,7 +162,7 @@
                     }
                 }
             ],
-            "Eid": 49,
+            "Eid": 13,
             "Mode": "endpoint",
             "NetworkId": 30,
             "SupportedMessageTypes": {
@@ -205,7 +196,7 @@
                     }
                 }
             ],
-            "Eid": 59,
+            "Eid": 14,
             "Mode": "endpoint",
             "NetworkId": 40,
             "SupportedMessageTypes": {
@@ -239,7 +230,7 @@
                     }
                 }
             ],
-            "Eid": 69,
+            "Eid": 15,
             "Mode": "endpoint",
             "NetworkId": 50,
             "SupportedMessageTypes": {

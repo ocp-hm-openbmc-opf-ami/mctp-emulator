@@ -491,7 +491,11 @@ std::optional<std::pair<int, std::vector<uint8_t>>>
             }
 
             const auto& vendorString = vendorIter->second;
-            if (vendorString == "Intel" && vdpciMessage->reserved != 0x80)
+            phosphor::logging::log<phosphor::logging::level::ERR>(("ANJ print reserved bytes" + std::to_string(vdpciMessage->reserved)).c_str());
+            phosphor::logging::log<phosphor::logging::level::ERR>(("ANJ print vendorString" + vendorString).c_str());
+            std::set<uint8_t> s = {0x80, 0x81, 0x82, 0x83, 0x84, 0x85, 0x86, 0x87, 0x88, 0x89};
+            if (vendorString == "Intel" && (s.find(vdpciMessage->reserved) == s.end()))
+            //if (vendorString == "Intel" && vdpciMessage->reserved >= 0x80)
             {
                 phosphor::logging::log<phosphor::logging::level::WARNING>(
                     "mctp-emulator: Invalid VDPCI message: Unexpected value in "
@@ -609,7 +613,11 @@ std::optional<std::pair<int, std::vector<uint8_t>>>
                               << "exception id: " << e.id << std::endl;
                     continue;
                 }
-
+                for(auto i : response)
+                {
+                     phosphor::logging::log<phosphor::logging::level::ERR>(
+                ("Response vector : " + std::to_string(i)).c_str());
+                }
                 return std::make_pair(processingDelayMilliSec, response);
             }
         }
@@ -740,9 +748,14 @@ MctpBinding::MctpBinding(
            std::vector<uint8_t> payload) {
             int rc = -1;
 
-            phosphor::logging::log<phosphor::logging::level::INFO>(
-                "mctp-emulator: Received Payload");
-
+            phosphor::logging::log<phosphor::logging::level::ERR>(
+                "mctp-emulator: Received Payload1");
+            
+            for (auto i: payload) 
+            {
+                phosphor::logging::log<phosphor::logging::level::ERR>(
+                ("Payload vector : " + std::to_string(i)).c_str()); 
+            }
             auto responsePair = processMctpCommand(dstEid, payload);
 
             if (responsePair.has_value())
@@ -764,8 +777,12 @@ MctpBinding::MctpBinding(
         [](boost::asio::yield_context yield, uint8_t dstEid,
            std::vector<uint8_t> payload, uint16_t timeout) {
             phosphor::logging::log<phosphor::logging::level::INFO>(
-                "mctp-emulator: Received Payload");
-
+                "mctp-emulator: Received Payload2");
+            for (auto i: payload) 
+            {
+                phosphor::logging::log<phosphor::logging::level::ERR>(
+                ("Payload vector : " + std::to_string(i)).c_str()); 
+            }
             auto responsePair = processMctpCommand(dstEid, payload);
 
             if (responsePair.has_value())
