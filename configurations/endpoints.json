@@ -128,6 +128,167 @@
             }
         },
         {
+            "Eid": 11,
+            "Mode": "endpoint",
+            "NetworkId": 60,
+            "SupportedMessageTypes": {
+                "Ethernet": false,
+                "MctpControl": true,
+                "NCSI": false,
+                "NVMeMgmtMsg": false,
+                "PLDM": true,
+                "SECUREDMSG": false,
+                "CXLFMAPI": false,
+                "CXLCCI": true,
+                "SPDM": false,
+                "VDIANA": false,
+                "VDPCI": true
+            },
+            "Uuid": "34445ed8-de96-47e9-8e62-dad27c317f07",
+            "VDPCIMT": {
+                "CapabilitySets": [
+                    2,
+                    9
+                ]
+            }
+        },
+        {
+            "AdditionalInterfaces": [
+                {
+                    "xyz.openbmc_project.Inventory.Decorator.PCIDevice": {
+                        "Bus": 106,
+                        "Device": 3,
+                        "Function": 0
+                    }
+                }
+            ],
+            "Eid": 12,
+            "Mode": "endpoint",
+            "NetworkId": 70,
+            "SupportedMessageTypes": {
+                "Ethernet": false,
+                "MctpControl": true,
+                "NCSI": false,
+                "NVMeMgmtMsg": false,
+                "PLDM": true,
+                "SECUREDMSG": true,
+                "CXLFMAPI": false,
+                "CXLCCI": false,
+                "SPDM": true,
+                "VDIANA": false,
+                "VDPCI": true
+            },
+            "Uuid": "00000000-0000-0000-0000-000000000000",
+            "VDPCIMT": {
+                "CapabilitySets": [
+                    5,
+                    9
+                ]
+            }
+        },
+        {
+            "AdditionalInterfaces": [
+                {
+                    "xyz.openbmc_project.Inventory.Decorator.PCIDevice": {
+                        "Bus": 106,
+                        "Device": 3,
+                        "Function": 0
+                    }
+                }
+            ],
+            "Eid": 13,
+            "Mode": "endpoint",
+            "NetworkId": 30,
+            "SupportedMessageTypes": {
+                "Ethernet": false,
+                "MctpControl": true,
+                "NCSI": false,
+                "NVMeMgmtMsg": false,
+                "PLDM": true,
+                "SECUREDMSG": true,
+                "CXLFMAPI": false,
+                "CXLCCI": false,
+                "SPDM": true,
+                "VDIANA": false,
+                "VDPCI": true
+            },
+            "Uuid": "00000000-0000-0000-0000-000000000000",
+            "VDPCIMT": {
+                "CapabilitySets": [
+                    5,
+                    9
+                ]
+            }
+        },
+        {
+            "AdditionalInterfaces": [
+                {
+                    "xyz.openbmc_project.Inventory.Decorator.PCIDevice": {
+                        "Bus": 106,
+                        "Device": 3,
+                        "Function": 0
+                    }
+                }
+            ],
+            "Eid": 14,
+            "Mode": "endpoint",
+            "NetworkId": 40,
+            "SupportedMessageTypes": {
+                "Ethernet": false,
+                "MctpControl": true,
+                "NCSI": false,
+                "NVMeMgmtMsg": false,
+                "PLDM": true,
+                "SECUREDMSG": true,
+                "CXLFMAPI": false,
+                "CXLCCI": false,
+                "SPDM": true,
+                "VDIANA": false,
+                "VDPCI": true
+            },
+            "Uuid": "00000000-0000-0000-0000-000000000000",
+            "VDPCIMT": {
+                "CapabilitySets": [
+                    5,
+                    9
+                ]
+            }
+        },
+        {
+            "AdditionalInterfaces": [
+                {
+                    "xyz.openbmc_project.Inventory.Decorator.PCIDevice": {
+                        "Bus": 106,
+                        "Device": 3,
+                        "Function": 0
+                    }
+                }
+            ],
+            "Eid": 15,
+            "Mode": "endpoint",
+            "NetworkId": 50,
+            "SupportedMessageTypes": {
+                "Ethernet": false,
+                "MctpControl": true,
+                "NCSI": false,
+                "NVMeMgmtMsg": false,
+                "PLDM": true,
+                "SECUREDMSG": true,
+                "CXLFMAPI": false,
+                "CXLCCI": false,
+                "SPDM": true,
+                "VDIANA": false,
+                "VDPCI": true
+            },
+            "Uuid": "00000000-0000-0000-0000-000000000000",
+            "VDPCIMT": {
+                "CapabilitySets": [
+                    5,
+                    9
+                ]
+            }
+        },
+        {
             "AdditionalInterfaces": [
                 {
                     "xyz.openbmc_project.Inventory.Decorator.PCIDevice": {

@@ -491,7 +491,8 @@ std::optional<std::pair<int, std::vector<uint8_t>>>
             }
 
             const auto& vendorString = vendorIter->second;
-            if (vendorString == "Intel" && vdpciMessage->reserved != 0x80)
+            if (vendorString == "Intel" && !(vdpciMessage->reserved >= 0x80 &&
+                                             vdpciMessage->reserved <= 0xb1))
             {
                 phosphor::logging::log<phosphor::logging::level::WARNING>(
                     "mctp-emulator: Invalid VDPCI message: Unexpected value in "

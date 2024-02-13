@@ -1482,6 +1482,604 @@
     ],
     "VDPCI": {
         "Intel": {
+            "5": [
+                {
+                    "description": "Is Telemetry Supported Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        1
+                    ]
+                },
+                {
+                    "description": "Get Number of Telemetry Aggregators Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        3,
+                        0
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Aggregator Details for index 0 Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        1,
+                        2,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        2,
+                        0,
+                        115,
+                        131,
+                        41,
+                        20,
+                        14,
+                        0
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Aggregator Details for index 1 Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        1,
+                        2,
+                        1,
+                        1,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        2,
+                        0,
+                        195,
+                        167,
+                        49,
+                        11,
+                        36,
+                        13
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Aggregator Details for index 1 Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        1,
+                        2,
+                        1,
+                        2,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        2,
+                        0,
+                        121,
+                        37,
+                        51,
+                        29,
+                        36,
+                        13
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Sample for 0th aggregator & 0th sample Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        2,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        0,
+                        28,
+                        0,
+                        3,
+                        0,
+                        192,
+                        49,
+                        39
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Sample for 0th aggregator & 1st sample Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        2,
+                        0,
+                        0,
+                        1,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        2,
+                        156,
+                        9,
+                        0,
+                        8,
+                        9,
+                        900,
+                        0
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Sample for 0th aggregator & 2nd sample Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        0,
+                        1,
+                        2,
+                        0,
+                        20,
+                        19,
+                        24,
+                        100
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Sample for 0th aggregator & 3rd sample Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        2,
+                        0,
+                        0,
+                        3,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Sample for 0th aggregator & 4th sample Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        2,
+                        0,
+                        0,
+                        4,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        124,
+                        0,
+                        0,
+                        0,
+                        182,
+                        12,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Sample for 0th aggregator & 5th sample Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        2,
+                        0,
+                        0,
+                        5,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        204,
+                        4,
+                        0,
+                        0,
+                        240,
+                        19,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "description": "Get Telemetry Sample for 0th aggregator & 6th sample Domain-mapper",
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        2,
+                        0,
+                        0,
+                        6,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        204,
+                        4,
+                        0,
+                        0,
+                        240,
+                        19,
+                        0,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        1,
+                        1,
+                        4,
+                        0,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        3,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        1,
+                        2,
+                        4,
+                        0,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        4,
+                        1,
+                        128,
+                        105,
+                        97,
+                        16,
+                        12,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        1,
+                        2,
+                        4,
+                        1,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        4,
+                        1,
+                        9,
+                        59,
+                        50,
+                        213,
+                        12,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        1,
+                        2,
+                        4,
+                        2,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        4,
+                        1,
+                        120,
+                        20,
+                        109,
+                        242,
+                        12,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        12,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        87,
+                        206,
+                        8,
+                        0,
+                        2,
+                        156,
+                        9,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        12,
+                        0,
+                        0,
+                        1,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        87,
+                        206,
+                        8,
+                        0,
+                        2,
+                        156,
+                        9,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        12,
+                        0,
+                        0,
+                        2,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        87,
+                        206,
+                        8,
+                        0,
+                        2,
+                        156,
+                        9,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        12,
+                        0,
+                        0,
+                        3,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        87,
+                        206,
+                        8,
+                        0,
+                        2,
+                        156,
+                        9,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        12,
+                        0,
+                        0,
+                        4,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        87,
+                        206,
+                        8,
+                        0,
+                        2,
+                        156,
+                        9,
+                        0
+                    ]
+                },
+                {
+                    "processing-delay": 20,
+                    "request": [
+                        0,
+                        12,
+                        0,
+                        0,
+                        5,
+                        0
+                    ],
+                    "response": [
+                        126,
+                        128,
+                        134,
+                        0,
+                        5,
+                        64,
+                        87,
+                        206,
+                        8,
+                        0,
+                        2,
+                        156,
+                        9,
+                        0
+                    ]
+                }
+            ],
             "2": [
                 {
                     "processing-delay": 2000,
