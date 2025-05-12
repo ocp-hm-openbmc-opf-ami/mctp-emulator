@@ -11,6 +11,18 @@ actual target hardware is available.
 Anyone who find this useful for there upper layer application can
 contribute to this daemon.
 
+## Dependencies
+Following are the dependencies:
+- i2c
+- sdbusplus
+- systemd
+- mctp_intel
+- pthread
+- stdc++fs
+- phosphor_dbus
+- boost_coroutine
+- PkgConfig (for finding systemd installation paths)
+
 ## Usage details:
 This daemon will get compiled only if debug-tweaks are enabled.
 
